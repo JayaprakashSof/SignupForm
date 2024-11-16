@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" class="form-control" id="firstName" name="firstName" required>
+                <div class="invalid-feedback" id="firstNameError"><i class="fas fa-exclamation-circle"></i> Please enter your first name.</div>
+                <div class="invalid-feedback" id="firstNameLengthError"><i class="fas fa-exclamation-circle"></i> First name must be at least 5 characters long.</div>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" class="form-control" id="lastName" name="lastName" required>
+                <div class="invalid-feedback" id="lastNameError"><i class="fas fa-exclamation-circle"></i> Please enter your last name.</div>
+                <div class="invalid-feedback" id="lastNameLengthError"><i class="fas fa-exclamation-circle"></i> Last name must be at least 5 characters long.</div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+                <div class="invalid-feedback" id="emailError"><i class="fas fa-exclamation-circle"></i> Please enter your email.</div>
+                <div class="invalid-feedback" id="emailFormatError"><i class="fas fa-exclamation-circle"></i> Invalid email format.</div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+                <div class="invalid-feedback" id="passwordError"><i class="fas fa-exclamation-circle"></i> Please enter your password.</div>
+                <div class="invalid-feedback" id="passwordFormatError"><i class="fas fa-exclamation-circle"></i> Password must be at least 8 characters long and contain both letters and numbers.</div>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="submitForm()">Sign Up</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

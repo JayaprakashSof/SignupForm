@@ -1,0 +1,31 @@
+body {
+    background-color: #f4f4f4;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    width: 100%;
+}
+
+.invalid-feedback {
+    display: none;
+    color: red;
+}
+
+.invalid-feedback i {
+    margin-right: 5px;
+}
